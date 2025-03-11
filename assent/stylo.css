@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body
+{
+        background-color: black;
+        height: 100vh;
+        box-sizing: border-box;
+}
+.carta-bar
+{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+
+  @media (max-width: 1200px )
+  {
+    .carta-1
+    {
+        padding: 10%;
+        justify-content: center; 
+        flex-direction: column-reverse;
+        padding: 5%;
+        width: auto;
+    }
+}
