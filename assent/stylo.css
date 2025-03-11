@@ -1,11 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media (max-width: 1200px )
-  {
-    .h1
-    {
-        padding: 10%;
+body {
+    background-color: black;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carta-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacio entre imágenes */
+    padding: 20px; /* Espacio alrededor */
+}
+
+.carta {
+    width: 100%;      /* Se expande en pantallas pequeñas */
+    max-width: 600px; /* En pantallas grandes no será demasiado ancha */
+    height: auto;     /* Mantiene la proporción original */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1200px) {
+    .carta-bar {
+        flex-direction: row;  /* Las imágenes se alinearán horizontalmente */
         justify-content: center;
-        padding: 5%;
-        width: auto;
+    }
+
+    .carta {
+        width: 45%;  /* Ocuparán el 45% del ancho cada una */
+        max-width: 500px;
     }
 }
